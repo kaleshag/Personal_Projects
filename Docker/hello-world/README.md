@@ -29,19 +29,19 @@
 
 **And here I am using one IBM Cloud test account**
 
-`alias ic=ibmcloud
+`alias ic=ibmcloud`
 
-ic --version
+`ic --version`
 
-ic target
+`ic target`
 
-ic cr namespaces`
+`ic cr namespaces`
 
 *I have namespace something like sn-labs-kg1*
 
-`ic cr regions-et us-south
+`ic cr regions-et us-south`
 
-ic cr login`
+`ic cr login`
 
 *Now exporting my namespace to env variable*
 
@@ -49,10 +49,10 @@ ic cr login`
 
 *Tagging this image, so that we can push it to IBM Cloud Container Registry*
 
-`docker tag gkimage:v1 us.icr.io/$MY_NAMESPACE/hello-world:1
+`docker tag gkimage:v1 us.icr.io/$MY_NAMESPACE/hello-world:1`
 
-docker push us.icr.io/$MY_NAMESPACE/hello-world:1
+`docker push us.icr.io/$MY_NAMESPACE/hello-world:1`
 
-ic cr images
+`ic cr images`
 
-ic cr images --restrict $MY_NAMESPACE`
+`ic cr images --restrict $MY_NAMESPACE`
