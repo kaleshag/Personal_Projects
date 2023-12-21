@@ -26,3 +26,32 @@
 
 `k delete po hello-world`
 
+`k create -f hello-world-create.yaml`
+
+`k delete po hello-world`
+
+`k apply -f hello-world-apply.yaml`
+
+`k get deploy`
+
+`k get po`
+
+`k delete pod hello-world-749d5955dc-dtbg7 && kubectl get pods`
+
+`k expose deploy/hello-world`
+
+`k expose deploy/hello-world`
+
+`k get svc`
+
+**To start the proxy service**
+
+`k proxy`
+
+`curl -L localhost:8001/api/v1/namespaces/sn-labs-$USERNAME/services/hello-world/proxy`
+
+**Run the command which runs a for loop ten times creating 10 different pods and note names for each new pod.**
+
+`for i in `seq 10`; do curl -L localhost:8001/api/v1/namespaces/sn-labs-$USERNAME/services/hello-world/proxy; done`
+
+`k delete deploy/hello-world svc/hello-world`
