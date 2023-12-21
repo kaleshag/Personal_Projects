@@ -1,5 +1,5 @@
 # Docker commands used for day to day operations
-docker login
+`docker login
 docker logout
 docker --version
 docker images
@@ -19,4 +19,4 @@ docker exec -it <container> bash
 docker-compose
 docker logs <container>
 docker network ls
-docker volume ls
+docker volume ls`
