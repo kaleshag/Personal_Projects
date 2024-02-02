@@ -1,9 +1,12 @@
-# Terraform settings block
+# Terraform settings/configuration block
 terraform {
+    # Required Terraform Version
+    #required_version = "~> 1.7.2"
+    # Required Providers and their Versions
     required_providers {
         aws = {
             source = "hashicorp/aws"
-            #version = "~> 3.21"
+            #version = "~> 3.21" # Optional but recommended(Provider Requirements)
         }
     }
 }
